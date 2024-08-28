@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <base target="_blank">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printed page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <link rel="stylesheet" type="text/css" href="print.css">
+</head>
+
+<body class="A4">
+    <div id="main"></div>
+    <script>
+        window.onload = () => {
+            document.querySelector("#main").innerHTML = window.opener.document.querySelector("#result").innerHTML;
+        }
+    </script>
+</body>
+
+</html>
